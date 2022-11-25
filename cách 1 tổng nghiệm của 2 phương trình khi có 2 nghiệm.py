@@ -4,8 +4,8 @@ for i in range (1,3):
    a = int(input("nhap so a: "))
    b = int(input("nhap so b: "))
    c = int(input("nhap so c: "))
-   if (a==0):
-       print ("vui long nhap lai so a")
+   while (a==0):
+       a=int(input('vui lòng nhập lại số a: '))
    else:
        denta= b**2-4*a*c
        if (denta>0):
@@ -16,9 +16,9 @@ for i in range (1,3):
            s1=0
        print (s1)
        thu=thu+kq
-if thu==2:
    if kq == 1 :
       s=s+s1
+if thu == 2:
       print("tong nghiem cua 2 phuong trinh khi co 2 nghiem la:", s)
 else:
     print('2 phương trình không thỏa điều kiện cần')
