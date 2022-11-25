@@ -1,4 +1,5 @@
 s=0
+thu=0
 for i in range (1,3):
    a = int(input("nhap so a: "))
    b = int(input("nhap so b: "))
@@ -14,10 +15,11 @@ for i in range (1,3):
            kq=0
            s1=0
        print (s1)
+       thu=thu+kq
+if thu==2:
    if kq == 1 :
-       s=s+s1
-if kq == 0 :
-    if s!=0:
-        print('2 phương trình không thỏa điều kiện cần')
-print ("tong nghiem cua 2 phuong trinh khi co 2 nghiem la:",s)
+      s=s+s1
+      print("tong nghiem cua 2 phuong trinh khi co 2 nghiem la:", s)
+else:
+    print('2 phương trình không thỏa điều kiện cần')
 
